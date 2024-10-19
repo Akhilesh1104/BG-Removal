@@ -9,8 +9,8 @@ const clerkWebhooks = async (req,res) => {
 
         await whook.verify(JSON.stringify(req.body),{
             "svix-id": req.headers["svix-id"],
-            "svix-timestamp": req.headers["svix-timestamp"],
-            "svix-signature": req.headers["svix-signature"]
+            "svix-timestamp":req.headers["svix-timestamp"],
+            "svix-signature":req.headers["svix-signature"]
         })
 
         const {data, type} = req.body;
@@ -27,7 +27,7 @@ const clerkWebhooks = async (req,res) => {
                 }
 
                 await userModel.create(userData);
-                return res.json({});
+                res.json({});
 
                 break;
             }
@@ -43,7 +43,7 @@ const clerkWebhooks = async (req,res) => {
                 }
 
                 await userModel.findOneAndUpdate({clerkId:data.id}, userData);
-                return res.json({});
+                res.json({});
 
                 break;
             }
@@ -51,7 +51,7 @@ const clerkWebhooks = async (req,res) => {
             case "user.deleted":{
 
                 await userModel.findOneAndDelete({clerkId:data.id})
-                return res.json({});
+                res.json({});
 
                 break;
             }
