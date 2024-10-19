@@ -14,6 +14,6 @@ app.use(express.json());
 app.use(cors());
 
 //API Routes
-app.get('/', (req,res)=>res.send("API Working"));
+app.get('/', (req,res)=> res.send("API Working"));
 
 app.listen(PORT, ()=> console.log("Server Running on PORT " + PORT))
