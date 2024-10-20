@@ -18,7 +18,7 @@ const BgSlider = () => {
         {/*-----------------------Background Image---------------------*/}
 
         <img
-          src={assets.image_w_bg}
+          src={assets.photo_bg}
           style={{ clipPath: `inset(0 ${100.2 - sliderPosition}% 0 0)` }}
           alt=""
         />
@@ -27,7 +27,7 @@ const BgSlider = () => {
 
         <img
           className="absolute top-0 left-0 w-full h-full"
-          src={assets.image_wo_bg}
+          src={assets.photo_bg_removed}
           style={{ clipPath: `inset(0 0 0 ${sliderPosition}% )` }}
           alt=""
         />
