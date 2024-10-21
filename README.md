@@ -2,6 +2,10 @@
 
 BG-Removal is a web application that utilizes the Clipdrop background removal API to remove backgrounds from images. This powerful background removal service is seamlessly integrated into the BG-Removal platform, allowing users to efficiently and effectively remove backgrounds from their images.
 
+I have also built the credit system to remove the image background, and user can purchase more credits using online payment method that I have integrated in this application.
+
+In this Full Stack AI React project I have created user authentication with the help of Clerk. Clerk allows us to create user authentication and user management with few lines code. It provides beautiful and ready to use UI components like Login Form, Registration form and user profile component that we can easily integrate in out React Application.
+
 
 ## Application Screenshots :
 ![Screenshot1](https://github.com/user-attachments/assets/de9dea66-521f-48b6-a1a2-16b5b009d1fa)
